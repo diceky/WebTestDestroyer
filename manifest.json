@@ -1,0 +1,54 @@
+{
+  "manifest_version": 2,
+  "name": "WebTestDestroyer",
+  "description": "This extension destroys the meaningless web tests in Japanese job hunting.",
+  "version": "1.0",
+  "background": {
+    "scripts": [
+    ],
+    "persistent": false
+  },
+  "icons":{
+      "16":"icons/icon-16.png",
+      "48":"icons/icon-48.png",
+      "128":"icons/icon-128.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/icon.png",
+    "default_title": "WebTestDestroyer",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": ["jquery-3.2.1.min.js"]
+    }
+  ],
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "https://*/*",
+    "http://*/*",
+    "https://apis.google.com/*",
+    "storage",
+    "clipboardWrite",
+    "identity"
+  ],
+  "oauth2": {
+    "client_id": "319985881756-cp1d55s0a9uq2b9g931lrgotsql21qim.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/spreadsheets.readonly"
+    ]
+  },
+  "web_accessible_resources": [
+    "data/tg-web.json",
+    "data/tamatebako.json",
+    "data/spi.json",
+    "data/gab.json",
+    "popup.css"
+  ],
+  "content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'"
+}

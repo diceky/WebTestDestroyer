@@ -1,0 +1,49 @@
+html,body{
+  margin:0px;
+  height: 300px;
+}
+
+.header{
+  margin:0px;
+  background-color: white;
+  padding: 10px 5px;
+}
+
+.instruction{
+  font-family: "Hiragino Sans","ヒラギノ角ゴシック"; font-weight: 900;
+  font-size: 12px;
+  color: red;
+}
+
+.content{
+  width: 200px;
+  background-color: black;
+  padding: 20px;
+}
+
+input[type=radio]{
+  margin: 10px;
+}
+
+input[type=submit]{
+  height: 50px;
+  width:100%;
+  font: bold 30px arial, sans-serif;
+  border:0;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: red;
+  color: black;
+  padding: 10px;
+}
+
+input[type=submit]:hover{
+  border:0;
+  color:black;
+  background-color: #a02e2e;
+}
+
+.radio{
+  color: white;
+  font-size: 15px;
+}
