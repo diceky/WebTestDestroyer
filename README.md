@@ -3,7 +3,7 @@ A Chrome extension to destroy the meaningless web tests in Japanese job hunting.
 
 ![key visual](./fig.jpg)
 
-#How It Works
+# How It Works
 A lot of Japanese university students have answers to major web tests in the form of a Microsoft Excel file. I collected many of such answers, turned them into JSON files per type of test, and created a Chrome extension that will automatically look up the questions in the JSON file, find an answer and select the answers for you. Basically, *you just have to click the extension and it will do the test for you.* Hurray.
 
 # How To Use
